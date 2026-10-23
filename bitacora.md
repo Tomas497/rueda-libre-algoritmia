@@ -40,4 +40,32 @@ Pilares del Pensamiento Computacional:
 - Abstracción: Se omitieron detalles secundarios como las marcas, colores de las bicicletas o el tipo de tarjeta bancaria.
 - Algoritmo: Es la secuencia final de pasos ordenados con guiones que unifica la atención de la taquilla.
 
+| Entrada | Proceso | Salida |
+| :--- | :--- | :--- |
+| - `nombre` (Caracter)<br>- `horas` (Entero) | - Definir la variable `pxh` con el precio fijo de 10000<br>- Calcular el costo multiplicando `horas` por `pxh`<br>- Procesar la operación de forma secuencial | - Mostrar un mensaje con el `nombre`, las `horas` y el total a pagar |
+
+1. Caso de prueba para 1 hora:
+- Entrada: nombre = "Carlos", horas = 1
+- Resultado esperado calculado a mano: 1 * 10000 = 10000
+- Resultado obtenido en la ejecución: $10,000 (Coincide)
+
+
+2. Caso de prueba para 3 horas:
+- Entrada: nombre = "Ana", horas = 3
+- Resultado esperado calculado a mano: 3 * 10000 = 30000
+- Resultado obtenido en la ejecución: $30,000 (Coincide)
+
+
+3. Caso de prueba para 8 horas:
+- Entrada: nombre = "Luis", horas = 8
+- Resultado esperado calculado a mano: 8 * 10000 = 80000
+- Resultado obtenido en la ejecución: $80,000 (Coincide)
+
+
+
+Análisis de valores inválidos (0 o negativos):
+- Si la persona de taquilla ingresa un valor de 0 horas, el algoritmo realiza la multiplicación y muestra un total de $0.
+- Si se ingresa un número negativo, el programa efectúa la operación matemática dando como resultado una cifra negativa.
+- Este comportamiento genera un error de lógica del negocio al carecer de validaciones, el cual se encuentra registrado como pendiente para ser resuelto en la semana 2 mediante estructuras de decisión condicional.
+
 
